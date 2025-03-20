@@ -3,5 +3,17 @@
 {% block title %}Hello HomeController!{% endblock %}
 
 {% block body %}
-  HOME
+<section class="container mt-3">
+   <div class="row">
+      <div class="col-8">
+          <h2>Articles récents</h2>
+          <hr>
+      </div>
+      <div class="col-4">
+        {% include "widget/about.html.twig" %}
+        <hr>
+        {% include "widget/category.html.twig" %}
+      </div>
+   </div>
+</section>
 {% endblock %}

@@ -77,3 +77,12 @@ Introduit la relation article dans la creation de la table category
 -----> CategorYController.php
 -----> CommentController.php
 ----->PageController.php
+
+
+-----------------------------------------------CREATION ADMINISTRATION-------------------------------------------
+Installer d'abord le bundle admin
+composer require symfony/admin-bundle
+php bin/console cache:clear
+
+-->symfony console make:admin:dashboard
+-->symfony console make:admin:crud [0]
